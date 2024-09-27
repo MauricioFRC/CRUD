@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-using System.Data;
+﻿using System.Data;
 using System.Data.SQLite;
-using System.Data.SqlClient;
 
 namespace CRUD
 {
@@ -210,12 +203,14 @@ namespace CRUD
                     {
                         if (reader.Read()) // Si se encuentra el usuario
                         {
+                            DateTime dt = DateTime.Parse(reader["fecha_nacimiento"].ToString());
+
                             // Usa los TextBox existentes en el formulario
                             cidRellenar.Text = reader["cid"].ToString();
                             nombreRellenar.Text = reader["nombres"].ToString();
                             apellidoRellenar.Text = reader["apellidos"].ToString();
                             numTelRellenar.Text = reader["ntelf"].ToString();
-                            fecNacRellenar.Text = reader["fecha_nacimiento"].ToString();
+                            fecNacRellenar.Text = dt.ToString("yyyy-MM-dd");
 
                             MessageBox.Show("Usuario Encontrado");
                         }

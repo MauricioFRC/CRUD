@@ -54,13 +54,6 @@
             TxtEliminarUsuario = new TextBox();
             label1 = new Label();
             BtnEliminarUsuario = new Button();
-            tabPage4 = new TabPage();
-            label12 = new Label();
-            label13 = new Label();
-            TxtCidConsulta = new TextBox();
-            LblCidConsulta = new Label();
-            BtnConsultarUsuario = new Button();
-            dataGridView2 = new DataGridView();
             tabPage1 = new TabPage();
             TxtFecNacActualizar = new TextBox();
             label14 = new Label();
@@ -85,8 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
             tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
-            tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -95,7 +86,6 @@
             // 
             TabControl.Controls.Add(tabPage2);
             TabControl.Controls.Add(tabPage3);
-            TabControl.Controls.Add(tabPage4);
             TabControl.Controls.Add(tabPage1);
             TabControl.Dock = DockStyle.Fill;
             TabControl.HotTrack = true;
@@ -319,7 +309,7 @@
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Location = new Point(351, 0);
             dataGridView3.Name = "dataGridView3";
-            dataGridView3.Size = new Size(821, 596);
+            dataGridView3.Size = new Size(821, 594);
             dataGridView3.TabIndex = 8;
             // 
             // TxtEliminarUsuario
@@ -350,81 +340,6 @@
             BtnEliminarUsuario.UseVisualStyleBackColor = true;
             BtnEliminarUsuario.Click += BtnEliminarUsuario_Click;
             // 
-            // tabPage4
-            // 
-            tabPage4.Controls.Add(label12);
-            tabPage4.Controls.Add(label13);
-            tabPage4.Controls.Add(TxtCidConsulta);
-            tabPage4.Controls.Add(LblCidConsulta);
-            tabPage4.Controls.Add(BtnConsultarUsuario);
-            tabPage4.Controls.Add(dataGridView2);
-            tabPage4.Location = new Point(4, 24);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(1172, 604);
-            tabPage4.TabIndex = 3;
-            tabPage4.Text = "Consultar";
-            tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
-            label12.Font = new Font("Manrope", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.Black;
-            label12.Location = new Point(62, 236);
-            label12.Name = "label12";
-            label12.Size = new Size(232, 37);
-            label12.TabIndex = 18;
-            label12.Text = "Buscar Usuarios";
-            // 
-            // label13
-            // 
-            label13.ImageIndex = 1;
-            label13.ImageList = imageList1;
-            label13.Location = new Point(121, 136);
-            label13.Name = "label13";
-            label13.RightToLeft = RightToLeft.Yes;
-            label13.Size = new Size(100, 100);
-            label13.TabIndex = 17;
-            // 
-            // TxtCidConsulta
-            // 
-            TxtCidConsulta.Location = new Point(163, 308);
-            TxtCidConsulta.Name = "TxtCidConsulta";
-            TxtCidConsulta.Size = new Size(153, 24);
-            TxtCidConsulta.TabIndex = 4;
-            // 
-            // LblCidConsulta
-            // 
-            LblCidConsulta.AutoSize = true;
-            LblCidConsulta.Font = new Font("Manrope", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LblCidConsulta.Location = new Point(28, 311);
-            LblCidConsulta.Name = "LblCidConsulta";
-            LblCidConsulta.Size = new Size(133, 17);
-            LblCidConsulta.TabIndex = 3;
-            LblCidConsulta.Text = "Cédula de Indentidad:";
-            // 
-            // BtnConsultarUsuario
-            // 
-            BtnConsultarUsuario.Cursor = Cursors.Hand;
-            BtnConsultarUsuario.Location = new Point(28, 379);
-            BtnConsultarUsuario.Name = "BtnConsultarUsuario";
-            BtnConsultarUsuario.Size = new Size(115, 37);
-            BtnConsultarUsuario.TabIndex = 2;
-            BtnConsultarUsuario.Text = "Consultar Usuario";
-            BtnConsultarUsuario.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView2.BackgroundColor = Color.White;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(351, 0);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(821, 594);
-            dataGridView2.TabIndex = 0;
-            // 
             // tabPage1
             // 
             tabPage1.Controls.Add(TxtFecNacActualizar);
@@ -445,10 +360,10 @@
             tabPage1.Controls.Add(label6);
             tabPage1.Controls.Add(BtnActualizarUsuario);
             tabPage1.Controls.Add(dataGridView1);
-            tabPage1.Location = new Point(4, 26);
+            tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1172, 602);
+            tabPage1.Size = new Size(1172, 604);
             tabPage1.TabIndex = 4;
             tabPage1.Text = "Actualizar";
             tabPage1.UseVisualStyleBackColor = true;
@@ -623,7 +538,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(351, 0);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(821, 584);
+            dataGridView1.Size = new Size(821, 580);
             dataGridView1.TabIndex = 0;
             // 
             // Crud
@@ -635,6 +550,7 @@
             Controls.Add(TabControl);
             Font = new Font("Manrope", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Crud";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CRUD";
@@ -645,9 +561,6 @@
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
-            tabPage4.ResumeLayout(false);
-            tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -659,7 +572,6 @@
         private TabControl TabControl;
         private TabPage tabPage2;
         private TabPage tabPage3;
-        private TabPage tabPage4;
         private Button BtnRegistrar;
         private Label LblFecNac;
         private Label LblNumTelf;
@@ -672,10 +584,6 @@
         private TextBox TxtCid;
         private TabPage tabPage1;
         private DataGridView dataGridView1;
-        private Button BtnConsultarUsuario;
-        private DataGridView dataGridView2;
-        private TextBox TxtCidConsulta;
-        private Label LblCidConsulta;
         private DataGridView dataGridView3;
         private TextBox TxtEliminarUsuario;
         private Label label1;
@@ -700,8 +608,6 @@
         private Label label9;
         private Label label10;
         private Label label11;
-        private Label label12;
-        private Label label13;
         private Label label14;
         private Label label15;
         private DateTimePicker DateTimePickerRegist;

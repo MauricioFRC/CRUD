@@ -10,7 +10,6 @@ namespace CRUD
         public void UpdateDataSource()
         {
             dataGridView1.DataSource = _dbManager.QueryUser();
-            dataGridView2.DataSource = _dbManager.QueryUser();
             dataGridView3.DataSource = _dbManager.QueryUser();
             dataGridView4.DataSource = _dbManager.QueryUser();
         }
@@ -54,7 +53,7 @@ namespace CRUD
                         TxtNombres.Text,
                         TxtApellidos.Text,
                         TxtNumTelf.Text,
-                        DateTimePickerRegist.Value.ToString("yyyy-MM-dd") // Insert Date from dateTimePicker
+                        DateTimePickerRegist.Value.Date.ToString("yyyy-MM-dd") // Insert Date from dateTimePicker
                         // TxtFecNac.Text
                     );
                     UpdateDataSource();
