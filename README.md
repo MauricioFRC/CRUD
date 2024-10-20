@@ -1,6 +1,12 @@
 # CRUD
 
 ---
+## Imágenes de la aplicación:
+
+![image](/img/10.png)
+![image](/img/11.png)
+
+---
 _Pasos previos a la compilación o utilización del proyecto:_
 
 [Instalar .NET Core 8.0 SDK](https://dotnet.microsoft.com/es-es/download/dotnet/8.0)
@@ -47,7 +53,7 @@ ls
 - _Una vez compilado el proyecto, debemos entrar al directorio de binarios para ejecutar el proyecto, y encontraras en archivo **CRUD.exe**, que es el binario ejecutable del proyecto:_
 
 ```ps1
-cd \bin\Release\net8.0\Release\ && .\CRUD.exe
+cd .\bin\Release\net8.0\Release\ && .\CRUD.exe
 ```
 ![image](/img/8.png)
 
@@ -59,5 +65,3 @@ _Si solo queremos ejecutar el proyecto en modo Debug, debemos ejercutar el sigui
 dotnet run
 ```
 ![image](/img/9.png)
-
----
